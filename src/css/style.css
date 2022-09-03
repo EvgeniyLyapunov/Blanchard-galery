@@ -1,0 +1,9 @@
+@import url("libs/normalize.css");
+@import url("libs/fonts.css");
+
+@import url("base/variables.css");
+@import url("base/general.css");
+
+@import url("blocks/header/header.css");
+
+@import url("blocks/hero/hero.css");
