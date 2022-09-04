@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
