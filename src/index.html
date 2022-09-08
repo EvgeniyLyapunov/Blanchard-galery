@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="shortcut icon" href="icons/favicon/Blanchard.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,13 +32,46 @@
     <div class="header__catalog container_header">
       <div class="container container_header">
         <ul class="header__catalog-list">
-          <li class="header__catalog-section">Реализм</li>
+          <li class="header__catalog-section">
+            <span>Реализм</span>
+            <div class="drop-down">
+              <div class="drop-down__scroll-aria" data-simplebar id="simplebar"">
+                <ul class="drop-down__list">
+                  <li class="drop-down__item drop-down__item_tintoretto">
+                    <a href="#" class="drop-down__link">Тинторетто</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_fridrih">
+                    <a href="#" class="drop-down__link">Фридрих</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_leonardo">
+                    <a href="#" class="drop-down__link">Леонардо</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_verrokkyo">
+                    <a href="#" class="drop-down__link">Верроккьо</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_verrokkyo">
+                    <a href="#" class="drop-down__link">Верроккьо</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_verrokkyo">
+                    <a href="#" class="drop-down__link">Верроккьо</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_verrokkyo">
+                    <a href="#" class="drop-down__link">Верроккьо</a>
+                  </li>
+                  <li class="drop-down__item drop-down__item_verrokkyo">
+                    <a href="#" class="drop-down__link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
           <li class="header__catalog-section">Импрессионизм</li>
           <li class="header__catalog-section">Постимпрессионизм</li>
           <li class="header__catalog-section">Авангард</li>
           <li class="header__catalog-section">Футуризм</li>
         </ul>
         <form class="header__search">
+          <button class="header__submit"></button>
           <input class="header__search-text" type="text" name="search-text" id="" placeholder="Поиск по сайту">
         </form>
       </div>
@@ -46,17 +81,31 @@
   <main>
     <section class="hero">
       <div class="container">
-
+        <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+        <p class="hero__descr">
+          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
+        </p>
+        <a class="hero__link" href="#">Подписаться на рассылку</a>
       </div>
       <!-- swiper -->
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">
+            <div class="hero__slide hero__slide-one"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__slide hero__slide-two"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__slide hero__slide-three"></div>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
