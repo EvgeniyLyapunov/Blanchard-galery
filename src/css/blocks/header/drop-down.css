@@ -8,7 +8,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
   opacity: 0;
-  transition: 0.3s opacity ease-in-out;
 }
 
 .drop-down_active {
@@ -20,7 +19,6 @@
   width: 300px;
   height: 220px;
   padding: 0 40px;
-  /* overflow: hidden; */
 }
 
 .drop-down__item {
@@ -39,6 +37,8 @@
   margin-bottom: 0;
 }
 
+/* reality */
+
 .drop-down__item_tintoretto {
   background-image: url("../../../img/backgrounds/drop-down-bg/reality/tintoretto-bg.jpg");
 }
@@ -53,6 +53,77 @@
 
 .drop-down__item_verrokkyo {
   background-image: url("../../../img/backgrounds/drop-down-bg/reality/verrokkyo-bg.jpg");
+}
+
+/* impression */
+
+.drop-down__item_mone {
+  background-image: url("../../../img/backgrounds/drop-down-bg/impression/mone-bg.jpg");
+}
+
+.drop-down__item_sisley {
+  background-image: url("../../../img/backgrounds/drop-down-bg/impression/sisley-bg.jpg");
+}
+
+.drop-down__item_mane {
+  background-image: url("../../../img/backgrounds/drop-down-bg/impression/mane-bg.jpg");
+}
+
+.drop-down__item_renuar {
+  background-image: url("../../../img/backgrounds/drop-down-bg/impression/renuar-bg.jpg");
+}
+
+/* postimpression */
+
+.drop-down__item_vangog {
+  background-image: url("../../../img/backgrounds/drop-down-bg/postimpression/vangog-bg.jpg");
+}
+
+.drop-down__item_sezann {
+  background-image: url("../../../img/backgrounds/drop-down-bg/postimpression/sezan-bg.jpg");
+}
+
+.drop-down__item_gugen {
+  background-image: url("../../../img/backgrounds/drop-down-bg/postimpression/gugen-bg.jpg");
+}
+
+.drop-down__item_syora {
+  background-image: url("../../../img/backgrounds/drop-down-bg/postimpression/syora-bg.jpg");
+}
+
+/* avangard */
+
+.drop-down__item_kandinskiy {
+  background-image: url("../../../img/backgrounds/drop-down-bg/avangard/kandinskiy-bg.jpg");
+}
+
+.drop-down__item_marinetty {
+  background-image: url("../../../img/backgrounds/drop-down-bg/avangard/marinetty-bg.jpg");
+}
+
+.drop-down__item_malevich {
+  background-image: url("../../../img/backgrounds/drop-down-bg/avangard/malevich-bg.jpg");
+}
+
+.drop-down__item_picasso {
+  background-image: url("../../../img/backgrounds/drop-down-bg/avangard/picasso-bg.jpg");
+}
+
+/* futurism */
+
+.drop-down__item_karra {
+  background-image: url("../../../img/backgrounds/drop-down-bg/futurism/karra-bg.jpg");
+}
+
+.drop-down__item_pratella {
+  background-image: url("../../../img/backgrounds/drop-down-bg/futurism/pratella-bg.jpg");
+}
+
+.drop-down__item_severiny {
+  background-image: url("../../../img/backgrounds/drop-down-bg/futurism/severiny-bg.jpg");
+}
+.drop-down__item_balla {
+  background-image: url("../../../img/backgrounds/drop-down-bg/futurism/balla-bg.jpg");
 }
 
 .drop-down__link {

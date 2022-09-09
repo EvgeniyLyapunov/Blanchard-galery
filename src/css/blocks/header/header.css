@@ -83,13 +83,25 @@
   line-height: 25px;
   color:#fff;
   cursor: pointer;
+
+  background-image: url("../../../icons/shevron-drop-down.svg");
+  background-position:right 0px bottom 6px;
+  background-repeat:no-repeat;
+  background-size: 12px 7px;
 }
 
 .header__catalog-section:last-child {
   margin-right: 0;
 }
 
-.header__catalog-section::after {
+.header__catalog-section_open {
+  background-image: url("../../../icons/shevron-drop-down-open.svg");
+  background-position:right 0px bottom 6px;
+  background-repeat:no-repeat;
+  background-size: 12px 7px;
+}
+
+/* .header__catalog-section::after {
   content: "";
   position: absolute;
   bottom: 9px;
@@ -98,7 +110,7 @@
   height: 5px;
   background: url("../../../icons/shevron-drop-down.svg") no-repeat center/cover;
   cursor: pointer;
-}
+} */
 
 
 .header__search {
