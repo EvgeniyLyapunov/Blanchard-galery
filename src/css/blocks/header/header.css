@@ -1,10 +1,10 @@
-.header__nav {
+.header__nav-panel {
   padding-top: 30px;
   padding-bottom: 30px;
   background:#000;
 }
 
-.container_header {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,12 +18,15 @@
 
 .header__nav-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-right: 420px;
+  padding-right: 150px;
+  width: 1172px;
 }
 
 .header__nav-item {
   margin-right: 62px;
+
 }
 
 .header__link {
@@ -61,6 +64,8 @@
   background: url("../../../icons/entrance.svg") no-repeat center/cover;
 }
 
+/* catalog */
+
 .header__catalog {
   padding-top: 21px;
   padding-bottom: 21px;
@@ -70,7 +75,7 @@
 .header__catalog-list {
   display: flex;
   align-items: center;
-  margin-right: 317px;
+  flex-wrap: wrap;
 }
 
 .header__catalog-section {
@@ -100,18 +105,6 @@
   background-repeat:no-repeat;
   background-size: 12px 7px;
 }
-
-/* .header__catalog-section::after {
-  content: "";
-  position: absolute;
-  bottom: 9px;
-  right: 0;
-  width: 10px;
-  height: 5px;
-  background: url("../../../icons/shevron-drop-down.svg") no-repeat center/cover;
-  cursor: pointer;
-} */
-
 
 .header__search {
   position: relative;
