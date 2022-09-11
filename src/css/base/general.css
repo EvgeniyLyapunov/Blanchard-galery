@@ -17,6 +17,10 @@ a {
   color: inherit;
 }
 
+a:focus {
+  outline: none;
+}
+
 
 .container {
   width: 1600px;

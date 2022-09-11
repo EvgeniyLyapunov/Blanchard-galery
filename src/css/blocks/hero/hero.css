@@ -33,7 +33,7 @@
   font-size: 18px;
   line-height: 25px;
   color: #fff;
-  background-color: var(--btn-links-color);
+  background-color: var(--state-semi-dark);
   border: none;
   border-radius: 100px;
 }
