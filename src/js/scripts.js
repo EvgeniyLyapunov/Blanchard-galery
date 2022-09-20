@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // подключаем свайпер на главный экран
   const swiper = new Swiper('.swiper', {
     autoplay: {
       delay: 5000,
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  catalogSections.forEach((el) => {
+    el.addEventListener("click", openCloseDropdown);
+  });
+
   // функция даёт или убирает outline родителю ссылки при фокусе на неё или потере фокуса
   function dropdownLinkFocus() {
     const dropdownLinks = document.querySelectorAll(".drop-down__link");
@@ -45,10 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  catalogSections.forEach((el) => {
-    el.addEventListener("click", openCloseDropdown);
-  });
-  
+  // подключение скроллбара в выпадающих дропбоксах
   const scroll = document.querySelectorAll(".drop-down__scroll-aria");
   scroll.forEach((el) => {
     new SimpleBar(el);
@@ -60,6 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // раскрытие и закрытие бургер - меню
+  const hamburger = document.querySelector(".hamburger"),
+        menuClose = document.querySelector(".header__menu-close"),
+        menu = document.querySelector(".header__nav-block");
+
+  hamburger.addEventListener("click", moveHamburgerMenu);
+  menuClose.addEventListener("click", moveHamburgerMenu);
+
+  function moveHamburgerMenu() {
+    menu.classList.toggle("header__nav-block-active");
+  }
 
 });
 

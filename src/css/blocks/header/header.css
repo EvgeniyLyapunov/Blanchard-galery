@@ -10,18 +10,32 @@
   align-items: center;
 }
 
+.hamburger {
+  display: none;
+}
+
+.header__menu-close {
+  display: none;
+}
+
 .header__logo {
   display: block;
   max-width: 173px;
   margin-right: 179px;
 }
 
+.header__nav-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-right: 150px;
-  width: 1172px;
+  width: 100%;
 }
 
 .header__nav-item {
@@ -30,6 +44,7 @@
 
 .header__nav-item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .header__link {
@@ -137,6 +152,7 @@
 
 .header__entrance-link:active::after {
   opacity: 0;
+  display: none;
 }
 
 /* catalog */
