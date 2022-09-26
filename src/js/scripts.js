@@ -72,6 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function moveHamburgerMenu() {
     menu.classList.toggle("header__nav-block-active");
+    if(menu.style.opacity === "1") {
+      setTimeout(() => {
+        menu.style.opacity = "0";
+      }, 1000);
+    } else {
+      menu.style.opacity = "1";
+    }
   }
 
 });
