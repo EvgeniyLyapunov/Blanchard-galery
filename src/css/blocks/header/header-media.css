@@ -1,6 +1,11 @@
 @media (max-width: 1640px) {
   .header__logo {
-    margin-right: 20px;
+    max-width: unset;
+    margin-right: 8px;
+  }
+
+  .header__nav-panel {
+    padding-bottom: 28px;
   }
 
   .header__nav-list {
@@ -32,7 +37,7 @@
   }
 
   .header__nav-block {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
@@ -116,11 +121,66 @@
     color: var(--state-dark);
   }
 
-  .search {
+  .header__search-icon-mobile {
     display: block;
     width: 29px;
     height: 29px;
     cursor: pointer;
+  }
+
+  .header__search-icon-mobile_visible {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .header__search-form-mobile {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 314px;
+    height: 34px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 7px 0 2px;
+    transition: 0.3s transform ease-in-out;
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+
+  .header__search-form-mobile_active {
+    transition: 0.3s transform ease-in-out;
+    transform: translateY(0);
+  }
+
+  .header__search-btn-mobile {
+    display: block;
+    width: 29px;
+    height: 29px;
+    padding: 0;
+    margin-right: 11px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .header__search-input-mobile {
+    width: 218px;
+    margin-right: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  .header__search-input-mobile:focus {
+    outline: none;
+    border-bottom: 2px solid var(--state-semi-dark);
+  }
+
+  .header__search-close-mobile {
+    display: block;
+    width: 23px;
   }
 }
 

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // подключаем свайпер на главный экран
   const swiper = new Swiper('.swiper', {
-    autoplay: {
-      delay: 5000,
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     effect: 'fade',
     fadeEffect: {
       crossFade: true
@@ -72,12 +72,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function moveHamburgerMenu() {
     menu.classList.toggle("header__nav-block-active");
-    if(menu.style.opacity === "1") {
+    setTimeoutOpacity(menu);
+  }
+
+  // вызов и скрытие формы поиска в header на мобильных брекпоинтах
+  const searchIcon = document.querySelector(".header__search-icon-mobile"),
+        searchForm = document.querySelector(".header__search-form-mobile"),
+        searchInput = searchForm.querySelector(".header__search-input-mobile"),
+        searchClose = searchForm.querySelector(".header__search-close-mobile");
+
+  searchIcon.addEventListener("click", searchFormVisible);
+  searchClose.addEventListener("click", searchFormVisible);
+
+
+  function searchFormVisible() {
+    searchIcon.classList.toggle("header__search-icon-mobile_visible");
+    searchForm.classList.toggle("header__search-form-mobile_active");
+    searchInput.value = "";
+    setTimeoutOpacity(searchForm);
+  }
+
+  function setTimeoutOpacity(item) {
+    if(item.style.opacity === "1") {
       setTimeout(() => {
-        menu.style.opacity = "0";
-      }, 1000);
+        item.style.removeProperty('opacity');
+      }, 400);
+      
     } else {
-      menu.style.opacity = "1";
+      item.style.opacity = "1";
     }
   }
 

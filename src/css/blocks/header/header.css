@@ -5,6 +5,7 @@
 }
 
 .header__nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +26,7 @@
 }
 
 .header__nav-block {
+  position: unset;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,7 +157,11 @@
   display: none;
 }
 
-.search {
+.header__search-icon-mobile {
+  display: none;
+}
+
+.header__search-form-mobile {
   display: none;
 }
 /* catalog */
@@ -258,14 +264,14 @@
 
 /* search */
 
-.header__search {
+.header__search-desk {
   position: relative;
   display: flex;
   min-width: 247px;
   padding-left: 31px;
 }
 
-.header__submit {
+.header__submit-desk {
   position: absolute;
   top: 6px;
   left: -2px;
@@ -277,11 +283,11 @@
   background: url("../../../icons/search-icon.svg") no-repeat center/cover;
 }
 
-.header__submit:focus {
+.header__submit-desk:focus {
   outline: none;
 }
 
-.header__search-text {
+.header__search-text-desk {
   width: 218px;
   font-style: normal;
   font-weight: 400;
@@ -293,48 +299,48 @@
   color:#fff;
 }
 
-.header__search-text:hover {
+.header__search-text-desk:hover {
   border: none;
   border-bottom: 1px solid var(--state-semi-light);
   color:#fff;
   outline: none;
 }
 
-.header__search-text:focus {
+.header__search-text-desk:focus {
   border: none;
   border-bottom: 1px solid var(--state-dark);
   color:#fff;
   outline: none;
 }
 
-.header__search-text::-webkit-input-placeholder {
+.header__search-text-desk::-webkit-input-placeholder {
   color:rgba(255, 255, 255, 0.85);
 } 
 
-.header__search-text::-moz-placeholder {
+.header__search-text-desk::-moz-placeholder {
   color:rgba(255, 255, 255, 0.85);
 }
   
-.header__search-text:-moz-placeholder {
+.header__search-text-desk:-moz-placeholder {
   color:rgba(255, 255, 255, 0.85);
 }
 
-.header__search-text:-ms-input-placeholder {
+.header__search-text-desk:-ms-input-placeholder {
   color:rgba(255, 255, 255, 0.85);
 }
 
-.header__search-text:focus::-webkit-input-placeholder {
+.header__search-text-desk:focus::-webkit-input-placeholder {
   color: transparent;
 } 
 
-.header__search-text:focus::-moz-placeholder {
+.header__search-text-desk:focus::-moz-placeholder {
   color: transparent;
 }
   
-.header__search-text:focus:-moz-placeholder {
+.header__search-text-desk:focus:-moz-placeholder {
   color: transparent;
 }
 
-.header__search-text:focus:-ms-input-placeholder {
+.header__search-text-desk:focus:-ms-input-placeholder {
   color: transparent;
 }

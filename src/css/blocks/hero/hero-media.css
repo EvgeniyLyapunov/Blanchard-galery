@@ -1,7 +1,30 @@
 /* pixel perfect on 1024px */
 @media (max-width: 1240px) {
-  .swiper {
-    top: 0;
+  .hero {
+    padding-top: 106px;
+    padding-bottom: 115px;
+  }
+
+  .hero__title {
+    line-height: 97px;
+  }
+
+  .hero__descr {
+    max-width: 660px;
+    margin-top: -10px;
+    margin-bottom: 133px;
+  }
+
+  .hero__slide-one {
+    background-image: url("../../../img/backgrounds/hero-main-bg__lg.jpg");
+  }
+  
+  .hero__slide-two {
+    background-image: url("../../../img/backgrounds/hero-second-bg__lg.jpg");
+  }
+  
+  .hero__slide-three {
+    background-image: url("../../../img/backgrounds/hero-third-bg__lg.jpg");
   }
 }
 
