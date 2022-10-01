@@ -72,20 +72,47 @@
 
   .hero__link:hover {
     padding: 13px 22px;
-    border: 3px solid var(--state-light);
   }
   
 }
 
 /* pixel perfect on 320px (container - 290px) */
 @media (max-width: 576px) {
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+
+  .hero__descr {
+    max-width: 283px;
+    margin-left: 2px;
+    margin-bottom: 41px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
   .hero__link {
     width: 200px;
     height: 40px;
+    margin: 0 auto;
     padding: 11px 16px 14px 19px;
     font-size: 12px;
     line-height: 16px;
   }
+
+  .hero__link:hover {
+    padding: 8px 13px 11px 16px;;
+  }
+
 
   .hero__slide-one {
     background-image: url("../../../img/backgrounds/hero-main-bg__sm.jpg");

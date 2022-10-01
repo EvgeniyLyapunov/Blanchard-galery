@@ -269,6 +269,7 @@
   display: flex;
   min-width: 247px;
   padding-left: 31px;
+  cursor: pointer;
 }
 
 .header__submit-desk {
@@ -281,6 +282,7 @@
   background-color:transparent;
   border: none;
   background: url("../../../icons/search-icon.svg") no-repeat center/cover;
+  cursor: pointer;
 }
 
 .header__submit-desk:focus {
@@ -297,6 +299,7 @@
   border: none;
   border-bottom: 1px solid #fff;
   color:#fff;
+  cursor: pointer;
 }
 
 .header__search-text-desk:hover {

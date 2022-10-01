@@ -161,6 +161,7 @@
     margin-right: 11px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   .header__search-input-mobile {
@@ -172,6 +173,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #fff;
+    cursor: pointer;
   }
 
   .header__search-input-mobile:focus {
@@ -182,6 +184,7 @@
   .header__search-close-mobile {
     display: block;
     width: 23px;
+    cursor: pointer;
   }
 }
 
@@ -191,6 +194,7 @@
   .header__search-form-mobile {
     width: 100%;
     height: 100%;
+    padding: 0;
     align-items: center;
     justify-content: space-between;
     background-color:#000;
@@ -249,8 +253,85 @@
 
 /* pixel perfect on 320px (container - 290px) */
 @media (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
+  .header__nav-panel {
+    padding-top: 12px;
+    padding-bottom: 11px;
+  }
+
+  .header__nav-block {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 26px;
+    justify-content: unset;
+    background-color: #000;
+  }
+
+  .header__menu-close {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
+  }
+
+  .header__link {
+    line-height: 32px;
+    font-size: 16px;
+  }
+
+  .header__entrance {
+    margin-top: auto;
+    padding: 8px 31px 10px 45px;
+  }
+
+  .header__entrance-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .header__entrance::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    top: 14px;
+    left: 33px;
+    background-size: contain;
+  }
+
+  .header__entrance:hover::after {
+    width: 15px;
+    height: 9px;
+    left: 30px;
+    background-size:contain;
+  }
+
+  .header__entrance:active::after {
+    width: 15px;
+    height: 9px;
+    left: 30px;
+    background-size:contain;
+  }
+
+  .header__entrance:active .header__entrance-link {
+    color: var(--state-dark);
+  }
+
+  .header__entrance-link:focus::after {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .header__search-btn-mobile, .header__search-btn-mobile img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header__search-input-mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__search-close-mobile {
+    width: 16px;
+    height: 16px;
   }
 }
