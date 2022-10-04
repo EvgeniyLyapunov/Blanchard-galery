@@ -84,15 +84,17 @@
   }
 
   .hero__title {
+    max-width: 290px;
+    margin: 0 auto 2px auto;
     font-size: 32px;
     line-height: 44px;
-    margin-bottom: 2px;
     text-align: center;
   }
 
   .hero__descr {
-    max-width: 283px;
-    margin-left: 2px;
+    max-width: 84%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 41px;
     font-weight: 400;
     font-size: 12px;

@@ -10,3 +10,6 @@
 
 @import url("blocks/hero/hero.css");
 @import url("blocks/hero/hero-media.css");
+
+@import url("blocks/about-us/about-us.css");
+@import url("blocks/about-us/about-us-media.css");

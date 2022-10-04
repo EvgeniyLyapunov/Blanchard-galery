@@ -1,6 +1,6 @@
 .hero {
   padding-top: 61px;
-  padding-bottom: 122px;
+  padding-bottom: 123px;
 }
 
 .hero__title {
@@ -9,13 +9,14 @@
   padding: 0;
   font-weight: 700;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 100px;
   color: #fff;
 }
 
 .hero__descr {
   max-width: 597px;
   margin: 0;
+  margin-top: -5px;
   margin-bottom: 91px;
   font-weight: 700;
   font-size: 18px;
@@ -90,6 +91,7 @@
 	height: 100%;
 	background-color: gray;
 	background-repeat: no-repeat;
+  background-position: center;
 	background-size: cover;
 }
 

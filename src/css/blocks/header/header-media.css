@@ -64,8 +64,8 @@
 
   .header__menu-close {
     display: block;
-    width: 29px;
     height: 29px;
+    width: 29px;
     margin-bottom: 30px;
     cursor: pointer;
   }
@@ -184,7 +184,24 @@
   .header__search-close-mobile {
     display: block;
     width: 23px;
+    height: 23px;
     cursor: pointer;
+  }
+
+  .header__search-close-mobile:hover rect {
+    fill: var(--state-semi-dark);
+  }
+
+  .header__search-close-mobile:focus rect {
+    fill: var(--state-semi-dark);
+  }
+
+  .header__search-close-mobile:focus {
+    outline: none;
+  }
+
+  .header__search-close-mobile:active rect {
+    fill: var(--state-dark);
   }
 }
 
@@ -206,6 +223,7 @@
 
   .header__search-close-mobile {
     width: 29px;
+    height: 29px;
   }
 }
 
